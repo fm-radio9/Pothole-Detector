@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Road Infrastructure Monitoring Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-content">
+            <h1>Smart Road Infrastructure Monitoring Portal</h1>
+            <p>Smart Pothole Detection & Maintenance Alert System</p>
+
+            <span class="prototype-label">
+                Academic Prototype | Live ESP32 Monitoring
+            </span>
+        </div>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav class="sidebar">
+        <h2>Road Monitoring</h2>
+
+        <ul>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#sensors">Live Monitoring</a></li>
+            <li><a href="#maintenance">Maintenance</a></li>
+            <li><a href="#analytics">Analytics</a></li>
+        </ul>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- DASHBOARD -->
+        <section id="dashboard">
+            <h2>Infrastructure Monitoring Dashboard</h2>
+
+            <div class="stats-container">
+
+                <div class="stat-card">
+                    <h3>Total Potholes</h3>
+                    <p id="totalPotholes">0</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Critical Potholes</h3>
+                    <p id="criticalPotholes">0</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Water-Filled Potholes</h3>
+                    <p id="waterPotholes">0</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Repairs Pending</h3>
+                    <p id="pendingRepairs">0</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Repairs Completed</h3>
+                    <p id="completedRepairs">0</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Road Health Index</h3>
+                    <p id="roadHealth">100%</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- LIVE SENSOR MONITORING -->
+        <section id="sensors">
+            <h2>Live ESP32 Sensor Monitoring</h2>
+
+            <div class="sensor-container">
+
+                <div class="sensor-card">
+                    <h3>Ultrasonic Distance</h3>
+                    <p id="ultrasonicValue">-- cm</p>
+                </div>
+
+                <div class="sensor-card">
+                    <h3>Estimated Pothole Depth</h3>
+                    <p id="depthValue">-- cm</p>
+                </div>
+
+                <div class="sensor-card">
+                    <h3>Magnetic Sensor</h3>
+                    <p id="magneticValue">--</p>
+                </div>
+
+                <div class="sensor-card">
+                    <h3>Wheel Rotations</h3>
+                    <p id="rotationValue">0</p>
+                </div>
+
+                <div class="sensor-card">
+                    <h3>Vehicle Speed</h3>
+                    <p id="speedValue">0 cm/s</p>
+                </div>
+
+                <div class="sensor-card">
+                    <h3>Moisture Status</h3>
+                    <p id="moistureValue">--</p>
+                </div>
+
+                <div class="sensor-card">
+                    <h3>GPS Status</h3>
+                    <p id="gpsStatus">Waiting...</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- MAINTENANCE MANAGEMENT -->
+        <section id="maintenance">
+            <h2>Maintenance Management</h2>
+
+            <p>
+                Monitor detected potholes and update their
+                maintenance status after repairs are completed.
+            </p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ticket ID</th>
+                        <th>Location</th>
+                        <th>Severity</th>
+                        <th>Water Status</th>
+                        <th>Maintenance Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="maintenanceTable">
+                    <tr>
+                        <td colspan="6">
+                            No maintenance tickets available.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- ROAD INFRASTRUCTURE ANALYTICS -->
+        <section id="analytics">
+            <h2>Road Infrastructure Analytics</h2>
+
+            <div id="analyticsContainer">
+                <p>
+                    Road health and pothole analytics will appear here.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Smart Road Infrastructure Monitoring Portal</p>
+        <p>Academic Project Prototype | ESP32-Based Monitoring System</p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
