@@ -16,8 +16,8 @@
 
 // ---------- WIFI CONFIGURATION ----------
 
-const char* ssid = "rowww";
-const char* password = "payme500";
+const char* ssid = "your hospot name";
+const char* password = "your hotspot password";
 
 const char* serverURL =
     "http://10.118.254.146:5001/api/sensor";
