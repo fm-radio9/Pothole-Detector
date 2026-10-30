@@ -1,14 +1,6 @@
 # Smart Pothole Detection and Road Monitoring System
 
 An ESP32-based prototype that measures surface depressions and sends sensor readings over Wi-Fi to a Flask web dashboard.
-
-## Team
-
-- FARAH MANIKINDI
-- SHARADHI CP
-- BANI V
-- HARSHITHA GR
-
 ## Features
 
 - Ultrasonic distance measurement and estimated depression depth.
@@ -113,34 +105,6 @@ If prompted by Windows Firewall, allow Python on your trusted private network. U
 5. The maintenance table allows a repair to be marked completed.
 
 The current reference distance is 2 cm, and detection requires estimated depth greater than 0.5 cm. Calibrate these settings for the actual mounting. The configured wheel diameter is 3.2 cm, so calculated speed is in cm/s.
-
-## Photos
-
-Upload photos with the following names to display them here:
-
-![Hardware setup](static/images/hardware_setup.jpeg)
-
-![Dashboard](static/images/dashboard.jpeg)
-
-![Maintenance table](static/images/maintenance.jpeg)
-
-## Demonstration video
-
-After uploading `demo.mp4` into `static/videos/`, use this link:
-
-[View demonstration video](static/videos/demo.mp4)
-
-For a large video, replace the link with a YouTube or shared Google Drive URL. Media links will work after the corresponding files are added.
-
-## Current limitations
-
-- Records are stored in memory and disappear when the Python server restarts.
-- GPS falls back to simulated positions when no recent valid fix is available; those positions are not measured locations.
-- The backend currently leaves depths at or below 1 cm unclassified, although the firmware detects depths above 0.5 cm.
-- Short detections between transmissions may be missed. Separate events can merge if the server does not receive a false state between them.
-- Sensor calibration and measured accuracy testing are still required.
-- The road-health percentage is a demonstration formula, not a validated pavement-condition score.
-- The server is a local prototype without authentication and is not configured for public deployment.
 
 ## Troubleshooting
 
